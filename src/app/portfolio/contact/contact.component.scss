@@ -1,36 +1,59 @@
 .contact {
-    padding: 100px 20px;
-    background-color: #222;
-    color: white;
-    text-align: center;
-  }
-  
-  .contact h2 {
+  width: 100%;
+  padding: 100px 20px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+
+  h2 {
     font-size: 2rem;
     margin-bottom: 20px;
   }
-  
-  .contact p {
+
+  p {
     font-size: 1.2rem;
     margin-bottom: 20px;
   }
-  
-  .contact ul {
+
+  ul {
     list-style: none;
     padding: 0;
+
+    li {
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        margin-right: 10px;
+        color: #ff6347;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+      }
+
+      a {
+        color: #ff6347;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #ff4500;
+          text-decoration: underline;
+        }
+      }
+    }
   }
-  
-  .contact li {
-    margin-bottom: 10px;
+}
+i.fa-whatsapp {
+  color: #25D366;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #128C7E;
   }
-  
-  .contact a {
-    color: #ff6347;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .contact a:hover {
-    text-decoration: underline;
-  }
-  
+}

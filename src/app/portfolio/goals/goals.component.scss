@@ -1,0 +1,63 @@
+.goals {
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    h2 {
+      color: #ff6347;
+      margin-bottom: 12px;
+    }
+  
+    p {
+      font-size: 1rem;
+      color: #bbb;
+      margin-bottom: 20px;
+    }
+  
+    .certificate {
+        width: 100vw;    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+      margin-bottom: 20px;
+  
+      h3 {
+        color: #ff4500;
+        margin-bottom: 10px;
+        font-size: 1.3rem;
+      }
+  
+      iframe {
+        width: 60%;
+        height: 500px;
+        border: 2px solid #ff6347;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+  
+        &:hover {
+          transform: scale(1.01);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+      }
+  
+      a {
+        display: inline-block;
+        margin-top: 8px;
+        color: #ff6347;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: #ff4500;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  

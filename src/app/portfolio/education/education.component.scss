@@ -1,0 +1,35 @@
+.education {
+    padding: 20px;
+    background-color: #222;
+    color: white;
+  
+    h2 {
+      color: #ff6347;
+      margin-bottom: 16px;
+    }
+  
+    .education-item {
+      background-color: #333;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+  
+      h3 {
+        color: #ff4500;
+        margin-bottom: 8px;
+      }
+  
+      p {
+        font-size: 1rem;
+        color: #bbb;
+      }
+  
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      }
+    }
+  }
+  

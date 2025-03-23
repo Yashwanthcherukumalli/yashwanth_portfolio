@@ -1,11 +1,38 @@
 <section class="projects">
-    <h2>Projects</h2>
-    <div class="project-list">
-      <div class="project" *ngFor="let project of projects">
-        <h3>{{ project.name }}</h3>
-        <p>{{ project.description }}</p>
-        <a [href]="project.link" target="_blank">View Code</a>
-      </div>
+  <h2>Professional Projects</h2>
+  <div class="project-list">
+    <div class="project">
+      <h3>Next Hire</h3>
+      <p>
+        An online job portal where employers can post jobs and job seekers can apply. 
+        The platform includes modules for Employers, Candidates, and Consultancies, 
+        allowing seamless interaction between different user roles.
+      </p>
+      <p>
+        Built using Angular 14 with TypeScript, HTML5, CSS3, and Bootstrap, the platform 
+        integrates REST APIs for real-time data updates and efficient state management.
+      </p>
+      <p>
+        Key features include job search with advanced filters, profile creation and updates, 
+        real-time notifications, and secure login using JWT-based authentication.
+      </p>
+      <p>
+        Dependency injection and lazy loading techniques were applied to enhance performance. 
+        The UI was designed with reusable components following Agile development methodology.
+      </p>
+      <ul>
+        <li>Built using Angular 14, HTML5, CSS3, Bootstrap</li>
+        <li>Implemented lazy loading and dependency injection</li>
+        <li>Integrated REST APIs for real-time updates</li>
+      </ul>
     </div>
-  </section>
-  
+    
+  </div>
+  <h2>personal Projects</h2>
+  <div class="project-list">
+    <div class="project" *ngFor="let repo of repos">
+      <h3>{{ repo.name }}</h3>
+      <a [href]="repo.html_url" target="_blank">View Code</a>
+    </div>
+  </div>
+</section>

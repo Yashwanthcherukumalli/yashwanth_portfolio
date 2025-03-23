@@ -1,9 +1,30 @@
-
 <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I am a frontend developer with 2.2+ years of experience in Angular and modern web development.
-      Skilled in building responsive and interactive web applications using Angular, JavaScript, TypeScript, HTML5, and CSS3.
-    </p>
-  </section>
-  
+  <h2>About Me</h2>
+  <p>
+    I am a frontend developer with 1.2+ years of experience in Angular and modern web development.
+    Skilled in building responsive and interactive web applications using Angular, JavaScript, TypeScript, HTML5, and CSS3.
+  </p>
+  <div class="select">
+    <p class="note">Click a button to view more details:</p>
+
+    <div class="buttons">
+      <button (click)="setActiveComponent('goals')">Certifications</button>
+      <button (click)="setActiveComponent('education')">Education</button>
+      <button (click)="setActiveComponent('blogs')">My Recent Blogs</button>
+    </div>
+  </div>
+
+
+
+  <div *ngIf="activeComponent === 'goals'">
+    <app-goals></app-goals>
+  </div>
+
+  <div *ngIf="activeComponent === 'education'">
+    <app-education></app-education>
+  </div>
+
+  <div *ngIf="activeComponent === 'blogs'">
+    <app-blogs></app-blogs>
+  </div>
+</section>

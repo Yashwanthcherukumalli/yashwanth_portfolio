@@ -1,0 +1,12 @@
+<section class="blogs">
+    <h2>My Blogs</h2>
+    <div class="blog-list">
+      <div class="blog" *ngFor="let blog of blogs">
+        <h3>{{ blog.title }}</h3>
+        <p>{{ blog.description }}</p>
+        <span>{{ blog.date }}</span>
+        <a [href]="blog.link" target="_blank">Read More</a>
+      </div>
+    </div>
+  </section>
+  

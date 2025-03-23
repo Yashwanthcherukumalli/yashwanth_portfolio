@@ -17,6 +17,7 @@ export class ProjectsComponent {
       .then(response => response.json())
       .then(data => {
         this.repos = data;
+        console.log(this.repos)
       });
   }
 }

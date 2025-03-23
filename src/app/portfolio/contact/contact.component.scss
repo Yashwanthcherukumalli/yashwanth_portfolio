@@ -1,9 +1,9 @@
 .contact {
   width: 100%;
-  padding: 100px 20px;
   background-color: #222;
   color: white;
   text-align: center;
+  padding-bottom: 20px;
 
   h2 {
     font-size: 2rem;
@@ -25,12 +25,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
 
       i {
-        margin-right: 10px;
         color: #ff6347;
         font-size: 1.5rem;
         transition: color 0.3s ease;
+
+        &:hover {
+          color: #ff4500;
+        }
       }
 
       a {
@@ -47,6 +52,7 @@
     }
   }
 }
+
 i.fa-whatsapp {
   color: #25D366;
   font-size: 1.5rem;
@@ -55,5 +61,32 @@ i.fa-whatsapp {
 
   &:hover {
     color: #128C7E;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) and (min-width: 320px) {
+  .contact {
+    padding-top: 180px;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    ul li {
+      font-size: 1rem;
+
+      i {
+        font-size: 1.3rem;
+      }
+
+      a {
+        font-size: 0.9rem;
+      }
+    }
   }
 }

@@ -1,14 +1,22 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
-import { Router } from 'express';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink,RouterLinkActive, RouterModule],
+  imports: [RouterLink, RouterLinkActive, RouterModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  isMenuOpen = false;
 
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+    if (this.isMenuOpen) {
+      document.querySelector('header')?.classList.add('menu-open');
+    } else {
+      document.querySelector('header')?.classList.remove('menu-open');
+    }
+  }
 }

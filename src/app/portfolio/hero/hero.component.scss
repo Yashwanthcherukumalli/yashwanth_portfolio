@@ -5,14 +5,14 @@
   justify-content: center;
   align-items: center;
   gap: 10%;
-  background-color: rgb(34, 34, 34);
-  color: white;
+  background-color:white;
+  color: rgba(11, 11, 11, 0.73);
   text-align: center;
 
   .intro {
     width: 40%;
     height: 100%;
-    color: #ff4500;
+    color:  rgba(11, 11, 11, 0.73);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,11 +35,11 @@
       li {
         margin-bottom: 8px;
         font-size: 1rem;
-        color: #ff6347;
+        color:  rgb(0, 0, 0);
         transition: color 0.4s ease, transform 0.4s ease;
     
         &:hover {
-          color: #ff4500;
+          color:  rgba(34, 67, 233, 0.73);
           transform: translateX(10px);
         }
       }
@@ -48,16 +48,20 @@
   }
 
   .btn {
-    background-color: #ff6347;
+    background-color: #1010b6;
     color: #fff;
     padding: 12px 24px;
     border: none;
+    font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s ease;
 
     &:hover {
-      background-color: #ff4500;
+      background-color: #1010b6;
+      box-shadow: 1px 1px 10px 1px black;
+      transform: scale3d(0.95, 0.95, 1);
+      transition: transform 1s ease-in-out;
     }
   }
 

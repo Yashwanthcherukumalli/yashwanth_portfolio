@@ -3,12 +3,7 @@ footer{
     padding: auto;
     height: 50px;
     width: 100%;
-    color: white;
+    color: rgba(50, 49, 49, 0.718);
     text-align: center;
-    box-shadow: 0px -10px 20px rgba(225, 69, 21, 0.5),
-    /* Bottom-to-top shadow */
-    0px -5px 10px rgba(213, 104, 14, 0.6) inset,
-    0px 5px 10px rgba(213, 104, 14, 0.6) inset;
-border: 2px solid rgba(234, 88, 63, 0.5);
-background-color: rgb(40, 39, 39);
+    
 }

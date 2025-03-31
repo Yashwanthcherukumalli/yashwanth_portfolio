@@ -1,4 +1,4 @@
-.projects {
+.projects,.products {
   width: 100%;
   background-color: white;
   color:black;
@@ -12,21 +12,20 @@
   h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: white;
-    -webkit-text-stroke: 2px #202020;
+    color: rgb(21, 90, 209);
   }
 }
 
 .project-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-columns: repeat(4, 1fr); /* 3 columns */
   gap: 20px;
 }
 
 
 
 
-.project {
+.project,.products {
   background-color:whitesmoke;
   margin: 20px;
   padding: 5%;
@@ -54,6 +53,7 @@
     padding: 6px 12px;
     border: 1px solid #1010b6;
     border-radius: 4px;
+    max-width: 200px;
     transition: background 0.3s ease, color 0.3s ease;
 
     &:hover {
@@ -109,4 +109,59 @@
   .project-list {
     grid-template-columns: 1fr; /* 1 column for mobile */
   }
+  .products{
+    width: 90%;
+
+  .chart-container {
+    flex-direction: column;
+    height: 80vh;
+    width: 90%;
+    .pie-chart{
+      width: 100%;
+
+    }
+  }
+}
+}
+
+
+.chart-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  max-width: 1400px;
+  min-width: 200px;
+  gap: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .pie-chart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+    background: conic-gradient(var(--gradient));
+  }
+  
+  .legend {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 10px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .legend-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
 }

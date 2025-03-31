@@ -27,6 +27,12 @@ export class BlogsComponent {
       "description": "A complete HTML guide including semantic elements, forms, accessibility, and SEO best practices.",
       "date": "March 16, 2025",
       "link": "https://www.linkedin.com/pulse/html-master-guide-yashwanth-cherukumalli-2lbif"
+    },
+    {
+      "title": "Naukri Job Automation Apply Project",
+      "description": "An automation project using Python and Playwright to streamline job applications on Naukri. Features include automated job search, filtering, and application submission.",
+      "date": "March 30, 2025",
+      "link": "https://github.com/Yashwanthcherukumalli/job_autoapply/blob/main/README.md"
     }
   ]
   

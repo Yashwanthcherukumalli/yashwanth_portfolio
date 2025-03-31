@@ -25,11 +25,27 @@
         <li>Integrated REST APIs for real-time updates</li>
       </ul>
     </div>
-    
-  <h2>personal Projects</h2>
+
+    <div class="products">
+      <div class="chart-container">
+        <h4>Total Projects: {{ totalProjects }}</h4>
+      
+        <div class="pie-chart" [ngStyle]="chartStyle"></div>
+      
+        <div class="legend">
+          <div *ngFor="let language of pieChartData; let i = index" class="legend-item">
+            <span class="legend-color" [style.background]="language.color"></span>
+            <span>{{ language.name }} - {{ language.value }} projects</span>
+          </div>
+        </div>
+      </div>
+      
+  </div>
   <div class="project-list">
     <div class="project" *ngFor="let repo of repos">
-      <h3>{{ repo.name }}</h3>
+      <h4>{{ repo.name }}</h4>
+      <p>{{repo.language}}</p>
+      <p>Created on {{ formatDate(repo.created_at) }}</p>
       <a [href]="repo.html_url" target="_blank">View Code</a>
     </div>
   </div>

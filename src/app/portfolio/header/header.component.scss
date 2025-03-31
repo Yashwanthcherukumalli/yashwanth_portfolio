@@ -41,6 +41,7 @@ header {
           width: auto;
           height: 40px;
           background-color: white;
+          color : white;
           border-radius: 8px;
           transition: background 0.2s ease, transform 0.3s ease;
   
@@ -56,6 +57,7 @@ header {
             &:hover {
               font-weight: bold;
               color: white;
+              background-color: #1010b6;
             }
           }
   
@@ -63,6 +65,7 @@ header {
             background-color: #1010b6;
             color: white;
             transform: scale(1.05);
+            border: 1px solid black;
             box-shadow: 0 4px 8px rgba(128, 128, 128, 0.4);
           }
         }

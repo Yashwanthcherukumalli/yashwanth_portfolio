@@ -33,7 +33,7 @@ export class ProjectsComponent {
 
         // Count languages
         this.languageCounts = this.repos.reduce((counts: { [key: string]: number }, repo: any) => {
-          let language = repo.language || (repo.name.toLowerCase().includes('powerbi') ? 'Power BI' : '');
+          let language = repo.language || (repo.name.toLowerCase().includes('powerbi') ? 'Power BI' : 'project on angular or bi');
           counts[language] = (counts[language] || 0) + 1;
           return counts;
         }, {});
